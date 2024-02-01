@@ -15,17 +15,17 @@ const Login = () => {
     e.preventDefault()
     try {
         await signInWithEmailAndPassword(auth, email, password)
-        navigate('/ejin/dashboard');
+        navigate('/dashboard');
 
     } catch (error) {
         console.log(error);
         setErrorMessage(error.message)
     }
   }
-  console.log(import.meta.env.REACT_APP_BASE);
   return (
     <form className="form-container" onSubmit={handleSubmit}>
       <h2>Login</h2>
+      <h2>test : {import.meta.env.VITE_BASE}</h2>
       <div className="container">
         <div>
           <label htmlFor="Email">Email</label>
