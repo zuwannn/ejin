@@ -22,6 +22,11 @@ const Login = () => {
         setErrorMessage(error.message)
     }
   }
+
+  const handleRegist = () => {
+    navigate('/ejin/register');
+  }
+
   return (
     <form className="form-container" onSubmit={handleSubmit}>
       <h2>Login</h2>
@@ -58,7 +63,7 @@ const Login = () => {
       </div>
 
       <hr></hr>
-        <a href="/ejin/register">Register?</a>
+        <button type="button" className='btn btn-btn-outline-info' onClick={handleRegist}>Register?</button>
         {errorMessage && <p className="error-message">{errorMessage}</p>}
     </form>
 
