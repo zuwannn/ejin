@@ -46,7 +46,7 @@ function Dashboard() {
   const handleLogout = () => {
     localStorage.removeItem('userData');
     setUserData(null);
-    navigate('/login');
+    navigate('/ejin/login');
   };
 
 

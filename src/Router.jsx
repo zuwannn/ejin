@@ -12,7 +12,7 @@ import Dashboard from './component/Dashboard'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <Route path="ejin/" exact element={<Login />} />
+      <Route path="ejin" exact element={<Login />} />
       <Route path="ejin/login/" element={<Login />} />
       <Route path="ejin/register/" element={<Register />} />
       <Route path="ejin/dashboard/" element={<Dashboard />} />

@@ -15,7 +15,7 @@ const Login = () => {
     e.preventDefault()
     try {
         await signInWithEmailAndPassword(auth, email, password)
-        navigate('ejin/dashboard');
+        navigate('/ejin/dashboard');
 
     } catch (error) {
         console.log(error);
