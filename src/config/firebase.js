@@ -28,13 +28,13 @@ import { Status, Role } from "./Initvar";
 
 // --------------------------------    Firebase Config     --------------------------------/
 const firebaseConfig = {
-    apiKey: "AIzaSyCgyDmvPVEKM9hxFxPXgaXrkbJditcIWFk",
-    authDomain: "react-auth-firebase-js-257bf.firebaseapp.com",
-    projectId: "react-auth-firebase-js-257bf",
-    storageBucket: "react-auth-firebase-js-257bf.appspot.com",
-    messagingSenderId: "286328147538",
-    appId: "1:286328147538:web:aa8ec91584b53856dc998b",
-    measurementId: "G-2TZ9MG36MT"
+    apiKey: import.meta.env.VITE_API_KEY,
+    authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_APP_ID,
+    measurementId: import.meta.env.VITE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
