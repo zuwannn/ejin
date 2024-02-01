@@ -58,7 +58,7 @@ const Login = () => {
       </div>
 
       <hr></hr>
-        <a href="ejin/register">Register?</a>
+        <a href="/ejin/register">Register?</a>
         {errorMessage && <p className="error-message">{errorMessage}</p>}
     </form>
 
