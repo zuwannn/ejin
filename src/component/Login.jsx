@@ -25,11 +25,12 @@ const Login = () => {
   return (
     <form className="form-container" onSubmit={handleSubmit}>
       <h2>Login</h2>
-      <h2>test : {import.meta.env.VITE_BASE}</h2>
       <div className="container">
-        <div>
-          <label htmlFor="Email">Email</label>
+        <div className='col-md-6 mb-3'>
+          <label htmlFor="Email" className='form-label'>Email</label>
           <input
+            className='form-control'
+            aria-description='emailHelp'
             type="email"
             placeholder="Email"
             value={email}
@@ -39,9 +40,10 @@ const Login = () => {
           />
         </div>
 
-        <div>
-          <label htmlFor="password">Password</label>
+        <div className='col-md-6 mb-3'>
+          <label htmlFor="password" className='form-label'>Password</label>
           <input
+            className='form-control'
             type="password"
             placeholder="Password"
             value={password}
