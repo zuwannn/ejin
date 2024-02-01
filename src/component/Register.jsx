@@ -16,7 +16,7 @@ const Register = () => {
         e.preventDefault()
         try {
             await registerWithEmailAndPassword(username, email, password)
-            navigate('/login');
+            navigate('ejin/login');
 
         } catch (error) {
             console.log(error);

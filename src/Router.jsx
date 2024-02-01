@@ -12,10 +12,10 @@ import Dashboard from './component/Dashboard'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <Route path="/" exact element={<Login />} />
-      <Route path="/login/" element={<Login />} />
-      <Route path="/register/" element={<Register />} />
-      <Route path="/dashboard/" element={<Dashboard />} />
+      <Route path="ejin/" exact element={<Login />} />
+      <Route path="ejin/login/" element={<Login />} />
+      <Route path="ejin/register/" element={<Register />} />
+      <Route path="ejin/dashboard/" element={<Dashboard />} />
     </>
   )
 )

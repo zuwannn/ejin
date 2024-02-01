@@ -15,7 +15,7 @@ const Login = () => {
     e.preventDefault()
     try {
         await signInWithEmailAndPassword(auth, email, password)
-        navigate('/dashboard');
+        navigate('ejin/dashboard');
 
     } catch (error) {
         console.log(error);
@@ -58,7 +58,7 @@ const Login = () => {
       </div>
 
       <hr></hr>
-        <a href="/register">Register?</a>
+        <a href="ejin/register">Register?</a>
         {errorMessage && <p className="error-message">{errorMessage}</p>}
     </form>
 
