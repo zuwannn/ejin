@@ -1,10 +1,11 @@
-import Home from "./component/Home"
+import { RouterProvider } from 'react-router-dom'
+import './App.css'
+import router from './Router'
+
 function App() {
 
   return (
-    <div>
-      <Home/>
-    </div>
+    <RouterProvider router={router} fallbackElement={null}/>
   )
 }
 
