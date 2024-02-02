@@ -31,8 +31,8 @@ const Login = () => {
     <form className="form-container" onSubmit={handleSubmit}>
       <h2>Login</h2>
       <div className="container">
-        <div className='mb-3'>
-          <label htmlFor="Email" className='form-label'>Email</label>
+        <div className='d-flex m-3'>
+          <label htmlFor="Email" className='form-label mx-3 col-2'>Email</label>
           <input
             className='form-control'
             aria-description='emailHelp'
@@ -45,8 +45,8 @@ const Login = () => {
           />
         </div>
 
-        <div className='mb-3'>
-          <label htmlFor="password" className='form-label'>Password</label>
+        <div className='d-flex m-3'>
+          <label htmlFor="password" className='form-label mx-3 col-2'>Password</label>
           <input
             className='form-control'
             type="password"

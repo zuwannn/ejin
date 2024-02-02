@@ -24,8 +24,8 @@ const Register = () => {
         }
     }
 
-    const handleTestButton = () => {
-        testButton()
+    const handleLogin = () => {
+        navigate('/ejin/login');
     }
 
     return (
@@ -33,25 +33,25 @@ const Register = () => {
             <h2>Register</h2>
             <div className="container ">
 
-                <div>
-                    <label htmlFor="username">Username</label>
-                    <input onChange={(e) => setName(e.target.value)} type="text" name="username" value={username} />
+                <div className='d-flex m-3'>
+                    <label htmlFor="username" className='form-label mx-3 col-3'>Username</label>
+                    <input className='form-control' onChange={(e) => setName(e.target.value)} type="text" name="username" value={username} />
                 </div>
 
-                <div>
-                    <label htmlFor="email">Email</label>
-                    <input onChange={(e) => setEmail(e.target.value)} type="email" name="email" value={email} required />
+                <div className='d-flex m-3'>
+                    <label htmlFor="email" className='form-label mx-3 col-3'>Email</label>
+                    <input className='form-control' onChange={(e) => setEmail(e.target.value)} type="email" name="email" value={email} required />
                 </div>
 
-                <div>
-                    <label htmlFor="password">Password</label>
-                    <input onChange={(e) => setPassword(e.target.value)} type="password" name="password" value={password} required />
+                <div className='d-flex m-3'>
+                    <label htmlFor="password" className='form-label mx-3 col-3'>Password</label>
+                    <input className='form-control' onChange={(e) => setPassword(e.target.value)} type="password" name="password" value={password} required />
                 </div>
 
-                <button className='btn btn-primary' type="submit">Register</button>
+                <button className='btn btn-primary col-4' type="submit">Register</button>
             </div>
             <hr />
-            <button type='button' className='btn btn-outline-info' onClick={handleTestButton} >Test Button</button>
+            <button type='button' className='btn btn-btn-outline-secondary' onClick={handleLogin} >Login?</button>
             {errorMessage && <p className="error-message">{errorMessage}</p>}
         </form>
 
