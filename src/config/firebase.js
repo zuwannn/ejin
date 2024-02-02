@@ -19,7 +19,7 @@ import {
     Timestamp,
 } from "firebase/firestore";
 
-import { Status, Role } from "./Initvar";
+// import { Status, Role } from "./Initvar";
 // const functions = require('firebase-functions');
 // const admin = require('firebase-admin');
 // admin.initializeApp();
@@ -54,10 +54,10 @@ const registerWithEmailAndPassword = async(name, email, password) => {
             name,
             created: Timestamp.now(),
             authProvider: "local",
-            status: Status[1],
-            role: Role[9],
-            // status: "active",
-            // role: "admin",
+            // status: Status[1],
+            // role: Role[9],
+            status: "active",
+            role: "admin",
         });
     } catch (err) {
         console.error(err);
